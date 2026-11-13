@@ -1,0 +1,21 @@
+# tvCANN-JAX environment, Python 3.12.
+#
+#     python -m venv .venv
+#     source .venv/bin/activate        # Windows: .venv\Scripts\activate
+#     pip install --upgrade pip
+#     pip install -r requirements.txt
+#
+# CPU-only by default (works on Windows, Linux and macOS). For an NVIDIA GPU
+# on Linux/WSL2, replace the jax line with:
+#
+#     jax[cuda12]==0.11.2
+#
+# On GPUs with little VRAM, cap JAX's preallocation to avoid out-of-memory errors:
+#
+#     export XLA_PYTHON_CLIENT_MEM_FRACTION=0.5
+
+jax==0.11.2
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+ipykernel==7.3.0
